@@ -15,18 +15,22 @@ The following dependencies are required to run the code:
 
 Create a virtual environment in the root directory:
 
+```bash
 pip install virtualenv
-
 virtualenv <env name>
+```
 
 To install the dependencies, run the following command:
 
+```bash
 pip install -r requirements.txt
+```
 
 To activate the environment:
 
+```bash
 source <env name>/bin/activate
-
+```
 
 Usage
 -----
