@@ -1,4 +1,4 @@
-Human Tracking Robot Perception Stack
+Human Tracking Robot
 =====================================
 
 This repository contains the code for human following robot perception stack for triton robot. The perception stack is designed to enable a robot to track a specific individual in a crowded environment. The perception stack consists of two main components: human detection and instance segmentation using YOLOv7, and feature extraction and matching using SuperPoint.
