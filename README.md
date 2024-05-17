@@ -15,17 +15,17 @@ The following dependencies are required to run the code:
 
 Create a virtual environment in the root directory:
 
-`pip install virtualenv`
+pip install virtualenv
 
-`virtualenv <env name>`
+virtualenv <env name>
 
 To install the dependencies, run the following command:
 
-`pip install -r requirements.txt`
+pip install -r requirements.txt
 
 To activate the environment:
 
-`source <env name>/bin/activate`
+source <env name>/bin/activate
 
 
 Usage
@@ -33,38 +33,37 @@ Usage
 
 To use the perception stack, run the following commands:
 
-`python3 scripts/main.py`
+```bash
+python3 scripts/main.py
+```
 
 Clone the repository in your catkin workspace:
-`cd catkin_ws/src`
 
-`git clone https://github.com/amiradmehr/human_following_robot`
-
-`cd ..`
-
-`catkin_make`
-
-`roscd human_following_robot/scripts`
-
-`chmod +x main.py`
-
-`source devel/setup.bash`
+```bash
+cd ~/catkin_ws/src
+git clone https://github.com/amiradmehr/human_following_robot
+cd ..
+catkin_make
+source devel/setup.bash
+roscd human_following_robot/scripts
+chmod +x main.py
+```
 
 First you need to run the launch file on the jetson nano:
 
-`export ROS_MASTER_URI=http://<jetson_ip>:11311`
-
-`export ROS_IP=<jetson_ip>`
-
-`roslaunch stingray_camera triton.launch`
+```bash
+export ROS_MASTER_URI=http://<jetson_ip>:11311
+export ROS_IP=<jetson_ip>
+roslaunch stingray_camera triton.launch
+```
 
 Now on your local machine:
 
-`export ROS_MASTER_URI=http://<jetson_ip>:11311`
-
-`export ROS_IP=<local_ip>`
-
-`rosrun human_following_robot main.py`
+```bash
+export ROS_MASTER_URI=http://<jetson_ip>:11311
+export ROS_IP=<local_ip>
+rosrun human_following_robot main.py
+```
 
 Algorithms used
 ---------------
